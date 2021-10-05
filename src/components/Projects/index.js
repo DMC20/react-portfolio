@@ -48,7 +48,7 @@ const Portfolio = () => {
             <Card xs={{ maxWidth: 450 }}>
                 <CardMedia
                     component="img"
-                    alt="green iguana"
+                    alt="party event"
                     height="140"
                     image="./static/nightcap.jpeg"
                 />
@@ -68,7 +68,7 @@ const Portfolio = () => {
             <Card xs={{ maxWidth: 450 }}>
                 <CardMedia
                     component="img"
-                    alt="green iguana"
+                    alt="note pad"
                     height="140"
                     image="./static/note.png"
                 />
@@ -88,7 +88,7 @@ const Portfolio = () => {
             <Card xs={{ maxWidth: 450 }}>
                 <CardMedia
                     component="img"
-                    alt="green iguana"
+                    alt="blog layout"
                     height="150"
                     image="./static/justask.png"
                 />
