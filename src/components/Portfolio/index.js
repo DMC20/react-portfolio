@@ -14,7 +14,7 @@ const Portfolio = () => {
         <Box sx={{ flexGrow: 1 }} marginTop={ 10 }>
         <Grid container spacing = 'center' spacing={8} >
           <Grid item xs={6}>
-            <Card xs={{ maxWidth: 450 }}>
+            <Card xs={{ maxWidth: 450 }} elevation={3}>
             <CardMedia
                 component="img"
                 alt="Run Buddy"
@@ -34,7 +34,7 @@ const Portfolio = () => {
 
 
         <Grid item xs={6}>
-            <Card xs={{ maxWidth: 450 }}>
+            <Card xs={{ maxWidth: 450 }} elevation={3}>
                 <CardMedia
                     component="img"
                     alt="party event"
@@ -54,7 +54,7 @@ const Portfolio = () => {
         </Grid>
 
         <Grid item xs={6}>
-            <Card xs={{ maxWidth: 450 }}>
+            <Card xs={{ maxWidth: 450 }} elevation={3}>
                 <CardMedia
                     component="img"
                     alt="note pad"
@@ -74,7 +74,7 @@ const Portfolio = () => {
         </Grid>
 
         <Grid item xs={6}>
-            <Card xs={{ maxWidth: 450 }}>
+            <Card xs={{ maxWidth: 450 }} elevation={3}>
                 <CardMedia
                     component="img"
                     alt="blog layout"

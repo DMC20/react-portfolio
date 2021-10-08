@@ -4,7 +4,7 @@ import Nav from "./components/Navigation";
 import About from "./components/About";
 import ContactForm from "./components/Contact";
 import Footer from "./components/Footer";
-import Portfolio from "./components/Projects";
+import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
 
 function App() {

@@ -1,16 +1,22 @@
 import React from 'react'
-import { Grid, Avatar, Typography, TextField, Button, Box } from '@material-ui/core'
+import { Avatar, TextField } from '@material-ui/core'
+import Box from '@mui/material/Box';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
+import Paper from '@mui/material/Paper'
+import Typography from "@mui/material/Typography";
+import Grid from '@mui/material/Grid';
+import Button from '@mui/material/Button';
+
 
 
 function ContactForm() {
     const paperStyle = { padding: '30px 20px', width: 300, margin: "20px auto" }
     const headerStyle = { margin: 0 }
     const avatarStyle = { backgroundColor: '#1bbd7e' }
-
+    
     return (
          <Grid>
-             <Box elevation={20} style={paperStyle}>
+             <Paper elevation={20} style={paperStyle}>
                  <Grid align='center'>
                      <Avatar style={avatarStyle}>
                          <QuestionAnswerIcon />
@@ -21,10 +27,10 @@ function ContactForm() {
                  <form>
                      <TextField fullWidth label='Name' placeholder="Enter your name"/>
                      <TextField fullWidth label='Email' placeholder="Enter your email"/>
-                     <TextField fullWidth label='Message' placeholder="Please enter your question"/>
+                     <TextField fullWidth label='Message' placeholder="Please type your question"/>
                      <Button type='submit' variant='text' color='primary'>Submit</Button>
                  </form>
-             </Box>
+             </Paper>
          </Grid>
     )
 }
