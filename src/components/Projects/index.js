@@ -6,24 +6,13 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
-import { styled } from '@mui/material/styles';
-
-
-const Item = styled(Paper)(({ theme }) => ({
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  }));
 
 const Portfolio = () => {
 
     return(
         <Box sx={{ flexGrow: 1 }} marginTop={ 10 }>
         <Grid container spacing = 'center' spacing={8} >
-
           <Grid item xs={6}>
             <Card xs={{ maxWidth: 450 }}>
             <CardMedia
@@ -103,9 +92,6 @@ const Portfolio = () => {
                 </CardActions>
             </Card>
         </Grid>
-
-
-
         </Grid>
       </Box>
     )

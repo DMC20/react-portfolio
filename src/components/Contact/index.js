@@ -1,63 +1,32 @@
-import React, { useState } from 'react';
+import React from 'react'
+import { Grid, Paper, Avatar, Typography, TextField, Button } from '@material-ui/core'
+import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 
-import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
-  const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const paperStyle = { padding: '30px 20px', width: 300, margin: "20px auto" }
+    const headerStyle = { margin: 0 }
+    const avatarStyle = { backgroundColor: '#1bbd7e' }
 
-  const [errorMessage, setErrorMessage] = useState('');
-  const { name, email, message } = formState;
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!errorMessage) {
-      setFormState({ [e.target.name]: e.target.value });
-      console.log('Form', formState);
-    }
-  };
-
-  const handleChange = (e) => {
-    if (e.target.name === 'email') {
-      const isValid = validateEmail(e.target.value);
-      if (!isValid) {
-        setErrorMessage('Your email is invalid.');
-      } else {
-        setErrorMessage('');
-      }
-    } else {
-      if (!e.target.value.length) {
-        setErrorMessage(`${e.target.name} is required.`);
-      } else {
-        setErrorMessage('');
-      }
-    }
-  };
-
-  return (
-    <section>
-      <h1 data-testid="h1tag">Contact me</h1>
-      <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
-        </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-        </div>
-        {errorMessage && (
-          <div>
-            <p className="error-text">{errorMessage}</p>
-          </div>
-        )}
-        <button data-testid="button" type="submit">Submit</button>
-      </form>
-    </section>
-  );
+    return (
+        <Grid>
+            <Paper elevation={20} style={paperStyle}>
+                <Grid align='center'>
+                    <Avatar style={avatarStyle}>
+                        <QuestionAnswerIcon />
+                    </Avatar>
+                    <h2 style={headerStyle}>Questions?</h2>
+                    <Typography variant='caption'>Please fill this form to reach out to me or click one of the links below.</Typography>
+                </Grid>
+                <form>
+                    <TextField fullWidth label='Name' placeholder="Enter your name"/>
+                    <TextField fullWidth label='Email' placeholder="Enter your email"/>
+                    <TextField fullWidth label='Message' placeholder="Please enter your question"/>
+                    <Button type='submit' variant='text' color='primary'>Submit</Button>
+                </form>
+            </Paper>
+        </Grid>
+    )
 }
 
 export default ContactForm;

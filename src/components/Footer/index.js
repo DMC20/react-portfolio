@@ -17,7 +17,7 @@ function Footer() {
                 <Grid>
                   <Grid item md= {12} sm={4}>
                     <Typography variant='h5' marginBottom={5}>
-                      Click Below to Contact Me
+                      Let's Connect! 
                     </Typography>
                     <Button variant='contained' className='icons' a href='mailto: danielcarazo20@gmail.com' target='_blank' startIcon={<EmailIcon />} />
                     <Button variant='contained' className='icons' a href='https://www.linkedin.com/in/danielcarazo20/' target='_blank' startIcon={<LinkedInIcon />} />
