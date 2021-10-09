@@ -11,9 +11,9 @@ function App() {
 
   return (
     <Router>
-      <Nav />
+      <Nav></Nav>
       <div>
-          <Route exact path="/About" component={About} />
+          <Route exact path="/" component={About} />
           <Route exact path="/Projects" component={Portfolio} />
           <Route exact path="/Contact" component={ContactForm} />
           <Route exact path='/Resume' component={Resume} />

@@ -29,7 +29,8 @@ const About = () => {
                   Hi Everyone!
                 </Typography>
                 <Typography variant="body2" gutterBottom>
-                  My name is Daniel Carazo and welcome to my portfolio. 
+                  My name is Daniel Carazo and welcome to my portfolio. I am a currently a Full Stack Developer in progress seeking an opportunity in the tech world.
+                  Please take a stroll on my page to see some of the projects I have been a part of, my skills, and click on one of the links below so we can connect!
                 </Typography>
               </Grid>
             </Grid>

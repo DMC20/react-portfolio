@@ -48,7 +48,6 @@ const Resume = () => {
                     </Card>
                 </Grid>
 
-
                 <Grid item xs={6}>
                     <Card xs={{ maxWidth: 450 }} elevation={5}>
                         <CardContent>
@@ -78,9 +77,7 @@ const Resume = () => {
                         </CardContent>
                     </Card>
                 </Grid>
-
-
-
+                <Typography marginLeft={4}>Click <a href='' target='_blank'>here</a> to download my resume</Typography>
         </Grid>
       </Box>
     )
