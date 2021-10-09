@@ -23,7 +23,8 @@ const Portfolio = () => {
             />
             <CardContent>
                 <Typography variant="body2" gutterBottom variant='h6' color="text.secondary">
-                Winter is just around the corner and that means endless food. Come sign up for Run Buddy to stay fit and reat for next summer!
+                    Why wait until winter to go back to the gym? Run Buddy makes it easy and convenient for you to stay in shape year round!
+                    So what are you waiting for? Join us!
                 </Typography>
             </CardContent>
             <CardActions>

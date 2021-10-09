@@ -1,13 +1,10 @@
 import React from 'react'
 import { Avatar, TextField } from '@material-ui/core'
-import Box from '@mui/material/Box';
 import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 import Paper from '@mui/material/Paper'
 import Typography from "@mui/material/Typography";
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
-
-
 
 function ContactForm() {
     const paperStyle = { padding: '30px 20px', width: 300, margin: "20px auto" }
