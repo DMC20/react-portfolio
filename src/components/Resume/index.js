@@ -4,14 +4,13 @@ import Typography from "@mui/material/Typography";
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-
-
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
+import PDF from '../../assets/Resume.pdf'
 
 const Resume = () => {
     return(
@@ -77,7 +76,7 @@ const Resume = () => {
                         </CardContent>
                     </Card>
                 </Grid>
-                <Typography marginLeft={4}>Click <a href='' target='_blank'>here</a> to download my resume</Typography>
+                <Typography marginLeft={4}>Click <a href={PDF} target='_blank'>here</a> to download my resume</Typography>
         </Grid>
       </Box>
     )
